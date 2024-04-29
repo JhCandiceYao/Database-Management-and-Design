@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Treble Clef</title>
-    <link rel="stylesheet"
-      href="{{ url_for('static', filename='css/main.css') }}"
-    />
+    <title>The Social Shelf</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" />
     <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
   </head>
   <body>
     <header>
       <div id="leftHeader">
         <a href="{{ url_for('home')}}">
-          <img src="static/images/misc/treble-clef-logo.jpg" alt="Treble Clef logo">
-
+            <img src="{{ url_for('static', filename='images/misc/the-social-shelf-logo.jpg') }}" alt="Logo" width="180" height="180">
         </a>
+          <span class="siteTitle">The Social Shelf</span>
       </div>
       <div id="midHeader">
         <form id='searchBoxForm' action="#" method="post">
@@ -29,6 +27,9 @@
                    The category name should be what is displayed
                    The general format should be
                    <p><a href="url with category Id parameter">category name</a></p>          -->
+                    <p><a href="{{ url_for('category', categoryId=category[0]) }}">{{ category[1] }}</a></p>
+
+
               {%endfor%}
             </div>
         </div>
