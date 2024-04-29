@@ -5,6 +5,7 @@
     <div id="mainLeft">
         <!-- Insert some welcome text here -->
         <h1 class="welcomeText">The Social Shelf is a virtual bookstore devoted to lovers of the social sciences</h1>
+            <img src="{{ url_for('static', filename='images/misc/' + 'bookstore-image.jpeg') }}" alt="bookstore-image" width="350" height="350">
         <p class="welcomeText">Welcome!</p>
         <p class="welcomeText">Shop, read, and think with us!</p>
         <p class="welcomeText">Dive into the ocean of knowledge..</p>
@@ -16,12 +17,7 @@
             {% for category in categories %}
                 <div class='category'>
                     <!-- Insert a p element that contains a link with the categoryid as a GET parameter
-                    The category name should be wha#leftHeader
-.siteTitle {
-  font: Book Antiqua;
-  font-size: 10em;
-  font-weight: bold;
-}t is displayed
+
                     The general format should be
                     <p><a href="url with category Id parameter">category name</a></p> -->
                     <p><a href="{{ url_for('category', categoryId=category[0]) }}"></a></p>
