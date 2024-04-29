@@ -32,7 +32,7 @@ header {
 }
 
 .dropdownSelect {
-    width: 189px;
+    width: 195px;
     padding: 5px;
     background-color: #4C3F48;
     color: pink;
@@ -93,7 +93,7 @@ header {
     text-decoration: none;
 }
 .loginButton a:hover {
-    color: #00aacc;
+    color: #fff9fc;
     text-decoration: none;
 }
 
@@ -166,7 +166,8 @@ main {
 }
 
 h1{
-    font-size: 1.6em;
+    font-size: 1.8em;
+    font-family:'papyrus';
     font-weight: 700;
 }
 
@@ -187,6 +188,7 @@ h1{
 }
 
 .welcomeText {
+    font-family: 'papyrus';
     max-width: 400px;
 }
 
@@ -211,10 +213,11 @@ h1{
     line-height: 40px;
     color: #4C3F48;
     font-weight: bold;
+
 }
 
 .category a{
-    text-decoration: none;
+    text-decoration:underline dotted ;
 }
 
 
@@ -257,23 +260,24 @@ h1{
     line-height: 30px;
     color: #4C3F48;
     font-size: smaller;
+    background-color:#EED9E7;
 }
 
 /* styles for the righthand section that shows all the books */
 
 #catRight {
     padding: 20px 0 20px 30px;
-    box-shadow: inset 0 0 0 20px #fff9fc;
+    /*box-shadow: inset 0 0 0 20px white;*/
     display: flex;
     flex-wrap: wrap;
-    background-color: #fff9fc;
+    background-color: white;
 }
 
 .book {
     width: 350px;
     margin: 30px;
     display: flex;
-    background-color: white;
+    background-color: #DDB8C5;
 }
 
 .bookDetailBox {
@@ -312,14 +316,14 @@ h1{
 
 #leftHeader
 .siteTitle {
-  font-family: 'Book Antiqua', Palatino, 'Palatino Linotype', serif;
+  font-family: 'Papyrus';
   font-size: 4em;
   font-weight: bold;
   color: #331323;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
   text-transform: uppercase;
   position: absolute;
-  top: 70px;
+  top: 80px;
   left: 250px;
   background-color: #DDB8C5;
   border-radius: 5px;
